@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,#9c55e2 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;   
+}
+
+.split-container {
+    display: flex;
+    height: 800px;
+    width: 1200px;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 1000px;
+}
+.section-left, .section-right {
+    flex: 1;
+    padding: 50px;
+}
+.section-left {
+    background-color: rgba(9, 7, 22, 0.548);
+    color: white;
+    align-items: center;
+    justify-content: left;
+}
+.section-left h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.section-left p {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+
+.section-right {
+    background-color: white;
+    align-items: center;
+    justify-content: right;
+}
+.section-right h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Spacing between rows */
+    display: flex;
+    gap: 20px; /* Adjust as needed for spacing between fields */
+}
+
+.form-input {
+    flex: 1; /* Allows inputs to take equal width in a flex container */
+    padding: 10px 0; /* Adjust padding as needed */
+    border: none;
+    border-bottom: 1px solid #ccc; /*Subtle bottom border*/
+    background-color: white;
+    font-size: 20px; /* Adjust font size */
+    color: #333; /* Text color */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-input::placeholder {
+    color: #888; /* Style for placeholder text */
+}
+
+select {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    background-color: white;
+    color: #333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 150px;
+    resize: none; /* Prevent resizing */
+    overflow: auto; /* Add scrollbars if content overflows */
+    border-bottom: 2px solid #0e0d0d;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.checkbox {
+    font-size: 20px;
+    justify-content: all round;
+    align-items: center;
+    margin-bottom: 15px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+label {
+    font-size: 22px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: hsl(204, 81%, 51%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
+    width: 100%;
+}
