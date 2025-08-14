@@ -135,3 +135,12 @@ button {
     margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
     width: 100%;
 }
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section-right {
+        order: -1;
+    }
+}
